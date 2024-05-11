@@ -73,6 +73,16 @@
             require-prior-idle-ms = <100>;
             bindings = <&sl>, <&kp>;
         };
+        
+        ht2hold: hold_tap_2_hold_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            bindings = <&sl>, <&kp>;
+        };
     };
 
     conditional_layers {
@@ -97,7 +107,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &ht2 3 X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &sl 6       &sl 1         &lt 2 ENTER   &kp SPACE 
+                                            &sl 6       &sl 1         &ht2hold 2 ENTER   &kp SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -113,7 +123,7 @@
 
         lower {
         bindings = <
-            &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
+            &kp ESCAPE  &trans  &trans  &trans  &trans    &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
             &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
             &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &kp GRAVE        &kp APOS
                                         &trans    &trans       &trans     &trans

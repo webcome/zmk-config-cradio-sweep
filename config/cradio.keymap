@@ -43,6 +43,16 @@
         key-positions = <10 30>;
         };
     };
+
+    macros {
+        leader_leader_s: leader_leader {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp ESCAPE &kp SPACE &kp SPACE &kp S>;
+        label = "LEADER_LEADER";
+        };
+    };
+
     
     behaviors {
         ht: hold_tap {

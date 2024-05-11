@@ -10,6 +10,40 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+        key-positions = <11 12>;
+        bindings = <&kp TAB>;
+        };
+
+        caps_word {
+        key-positions = <14 15>;
+        bindings = <&caps_word>;
+        };
+
+        delete {
+        key-positions = <27 28>;
+        bindings = <&kp DELETE>;
+        };
+
+        backspace {
+        bindings = <&kp BACKSPACE>;
+        key-positions = <17 18>;
+        };
+
+        leader_leader_s {
+        bindings = <&leader_leader_s>;
+        key-positions = <13 16>;
+        };
+
+        cmd_shift {
+        bindings = <&kp LS(LCMD)>;
+        key-positions = <10 30>;
+        };
+    };
+    
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -35,7 +69,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
     };
 

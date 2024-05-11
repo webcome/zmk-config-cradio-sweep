@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         tab {
-        key-positions = <11 12>;
+        key-positions = <12 13>;
         bindings = <&kp TAB>;
         };
 
@@ -104,8 +104,8 @@
 
         raise {
         bindings = <
-            &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR
-            &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+            &kp ESCAPE  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR
+            &kp EXCL    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
             &trans    &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS
                                         &trans    &trans       &trans     &trans
         >;
@@ -150,7 +150,7 @@
         special {
         bindings = <
             &kp ESCAPE  &kp LG(W)    &kp LG(E)  &kp LG(R)  &kp LG(T)    &trans         &trans        &trans         &kp LG(O)    &kp LG(P)
-            &kp LG(A)   &kt LG(TAB)  &kp LCMD   &kp LG(F)  &kp LG(G)    &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(K)      &kp LG(L)    &trans
+            &kp LG(A)   &kt LG(TAB)  &trans   &kp LG(F)  &kp LG(G)    &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(K)      &kp LG(L)    &trans
             &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &kp LG(B)    &trans         &trans        &kp LG(GRAVE)  &kp LG(DOT)  &kp LG(APOS)
                                         &trans    &trans       &trans     &trans
         >;

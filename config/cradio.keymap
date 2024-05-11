@@ -55,6 +55,7 @@
             bindings = <&kp>, <&kp>;
         };
         ht2: hold_tap {
+            label = "ht2";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";

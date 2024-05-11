@@ -115,8 +115,8 @@
         raise {
         bindings = <
             &kp ESCAPE  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR
-            &kp EXCL    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-            &trans    &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS
+            &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+            &kp EXCL    &trans  &trans    &trans    &trans       &trans     &trans     &trans    &kp GRAVE  &kp APOS
                                         &trans    &trans       &trans     &trans
         >;
         };

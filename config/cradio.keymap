@@ -54,8 +54,7 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-        ht2: hold_tap {
-            label = "ht2";
+        ht2: hold_tap_2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";

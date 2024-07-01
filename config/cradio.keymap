@@ -175,7 +175,7 @@
         special {
         bindings = <
             &trans   &trans    &trans  &trans  &trans   &trans  &trans  &trans           &trans            &trans
-            &trans   &trans    &trans  &trans  &trans   &trans  &trans  &kp LG(LS(LBKT)) &kp LG(LS(LBKT))  &trans
+            &trans   &trans    &trans  &trans  &trans   &trans  &trans  &kp LG(LS(LBKT)) &kp LG(LS(RBKT))  &trans
             &trans   &trans    &trans  &trans  &trans   &trans  &trans  &trans           &trans            &trans
                                        &trans  &trans   &trans  &trans
         >;

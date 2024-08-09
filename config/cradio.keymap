@@ -156,8 +156,8 @@
 
         fn {
         bindings = <
-            &kp F13  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans  &kp C_POWER
-            &kp F14  &kp F4  &kp F5  &kp F6  &kp F11    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans
+            &kp F13  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_MUTE            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP        &kp C_POWER
+            &kp F14  &kp F4  &kp F5  &kp F6  &kp F11    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       &trans                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans
             &kp F15  &kp F1  &kp F2  &kp F3  &kp F12    &trans                                  &trans                &trans                &trans  &trans
                                      &trans  &trans     &trans                                  &trans
         >;
@@ -174,9 +174,9 @@
         
         special {
         bindings = <
-            &trans   &trans    &trans  &trans  &trans   &trans  &trans  &trans           &trans            &trans
-            &trans   &trans    &trans  &trans  &trans   &trans  &trans  &kp LG(LS(LBKT)) &kp LG(LS(RBKT))  &trans
-            &trans   &trans    &trans  &trans  &trans   &trans  &trans  &trans           &trans            &trans
+            &trans   &trans    &trans  &trans  &trans   &trans  &trans            &trans             &trans    &trans
+            &trans   &trans    &trans  &trans  &trans   &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))   &trans    &trans
+            &trans   &trans    &trans  &trans  &trans   &trans  &trans            &trans             &trans    &trans
                                        &trans  &trans   &trans  &trans
         >;
         };

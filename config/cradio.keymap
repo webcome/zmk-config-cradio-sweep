@@ -2,8 +2,10 @@
 // SPDX-License-Identifier: MIT
 
 #include <behaviors.dtsi>
+#include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -14,7 +16,6 @@ CONFIG_ZMK_POINTING=y
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -115,10 +116,10 @@ CONFIG_ZMK_POINTING=y
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,     K,         L,        &ht2hold 7 SEMI)
+            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,     K,         L,        SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &ht2 3 X   &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT &kp FSLH
+            &kp Z      &ht2 3 X   &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT  &ht2hold 7 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &ht2hold 6 TAB   &sl 1   &ht2hold 2 ENTER  &kp SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯

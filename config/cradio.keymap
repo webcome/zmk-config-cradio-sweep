@@ -247,7 +247,7 @@
         };
 
         paren_or_less_than: paren_or_less_than {
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
             label = "PAREN_OR_LESS_THAN";
             bindings = <&kp LPAR>, <&kp LT>;
@@ -255,7 +255,7 @@
         };
 
         paren_or_greather_than: paren_or_greather_than {
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
             label = "PAREN_OR_LESS_THAN";
             bindings = <&kp RPAR>, <&kp GT>;
@@ -263,7 +263,7 @@
         };
 
         lbkt_or_lbrc: lbkt_or_lbrc {
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
             label = "lbkt_or_lbrc";
             bindings = <&kp LBKT>, <&kp LBRC>;
@@ -271,7 +271,7 @@
         };
 
         rbkt_or_rbrc: rbkt_or_rbrc {
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
             label = "rbkt_or_rbrc";
             bindings = <&kp RBKT>, <&kp RBRC>;

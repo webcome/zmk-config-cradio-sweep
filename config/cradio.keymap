@@ -231,7 +231,7 @@
 
         cmd_shift {
             timeout-ms = <50>;
-            bindings = <&kp LS(LCMD)>;
+            bindings = <&kp LS(LGUI)>;
             key-positions = <10 30>;
         };
     };

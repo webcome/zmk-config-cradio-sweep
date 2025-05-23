@@ -246,13 +246,6 @@
             bindings = <&sl>, <&kp>;
         };
 
-        sticky_comma: sticky_comma {
-            compatible = "zmk,behavior-sticky-key";
-            label = "Sticky COMMA";
-            #binding-cells = <1>;
-            release-after-ms = <500>;
-        };
-
         paren_or_less_than: paren_or_less_than {
             compatible = "zmk,behavior-mod-morph";
             label = "PAREN_OR_LESS_THAN";

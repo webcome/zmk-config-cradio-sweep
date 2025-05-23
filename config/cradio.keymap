@@ -58,7 +58,7 @@
         menor {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&sticky_comma>;
+            bindings = <&sticky_comma KC_COM>;
         };
 
         parenthesis_close {

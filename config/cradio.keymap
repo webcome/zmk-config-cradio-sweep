@@ -69,7 +69,7 @@
         mayor {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&sk &kp KC_DOT>;
+            bindings = <&sticky_comma KC_DOT>;
         };
 
         copy {
@@ -92,7 +92,7 @@
         llave_open {
             timeout-ms = <50>;
             key-positions = <26 27>;
-            bindings = <&sk &kp KC_LBRACKET>;
+            bindings = <&sticky_comma KC_LBRACKET>;
         };
 
         corchete_close {
@@ -103,7 +103,7 @@
         llave_close {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&sk &kp KC_RBRACKET>;
+            bindings = <&sticky_comma KC_RBRACKET>;
         }; 
 
         admiracion {

@@ -54,22 +54,22 @@
             key-positions = <16 17>;
             bindings = <&kp LPAR>;
         };
-        #menor {
-        #    timeout-ms = <50>;
-        #    key-positions = <16 17>;
-        #    bindings = <&sticky_comma KC_COM>;
-        #};
+        menor {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&sticky_comma COMMA>;
+        };
 
         parenthesisclose {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp RPAR>;
         };
-        #mayor {
-        #    timeout-ms = <50>;
-        #    key-positions = <17 18>;
-        #    bindings = <&sticky_comma KC_DOT>;
-        #};
+        mayor {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&sticky_comma DOT>;
+        };
 
         copy {
             timeout-ms = <50>;
@@ -88,22 +88,22 @@
             key-positions = <26 27>;
             bindings = <&kp LBKT>;
         };
-        #llaveopen {
-        #    timeout-ms = <50>;
-        #    key-positions = <26 27>;
-        #    bindings = <&sticky_comma KC_LBRACKET>;
-        #};
+        llaveopen {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&sticky_comma LBKT>;
+        };
 
         corcheteclose {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp RBKT>;
         };
-        #llaveclose {
-        #    timeout-ms = <50>;
-        #    key-positions = <27 28>;
-        #    bindings = <&sticky_comma KC_RBRACKET>;
-        #}; 
+        llaveclose {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&sticky_comma RBKT>;
+        }; 
 
         admiracion {
             timeout-ms = <50>;

@@ -52,7 +52,7 @@
         parenthesisopen {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp KC_LPAR>;
+            bindings = <&kp LPAR>;
         };
         #menor {
         #    timeout-ms = <50>;
@@ -63,7 +63,7 @@
         parenthesisclose {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp KC_RPAR>;
+            bindings = <&kp RPAR>;
         };
         #mayor {
         #    timeout-ms = <50>;
@@ -86,7 +86,7 @@
         corcheteopen {
             timeout-ms = <50>;
             key-positions = <26 27>;
-            bindings = <&kp KC_LBRACKET>;
+            bindings = <&kp LBKT>;
         };
         #llaveopen {
         #    timeout-ms = <50>;
@@ -97,7 +97,7 @@
         corcheteclose {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&kp KC_RBRACKET>;
+            bindings = <&kp RBKT>;
         };
         #llaveclose {
         #    timeout-ms = <50>;

@@ -272,14 +272,14 @@
             label = "lbkt_or_lbrc";
             bindings = <&kp LBKT>, <&kp LBRC>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
-        }
+        };
 
         rbkt_or_rbrc: rbkt_or_rbrc {
             compatible = "zmk,behavior-mod-morph";
             label = "rbkt_or_rbrc";
             bindings = <&kp RBKT>, <&kp RBRC>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
-        }
+        };
     };
 
     conditional_layers {

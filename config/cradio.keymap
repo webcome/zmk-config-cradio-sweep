@@ -49,27 +49,17 @@
             bindings = <&kp TAB>;
         };
 
-        parenthesisopen {
+        parenopenorless {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp LPAR>;
-        };
-        menor {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&sticky_comma COMMA>;
-        };
+            bindings = <&paren_or_less_than>;
+        }
 
-        parenthesisclose {
+        parencloseorgreater {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp RPAR>;
-        };
-        mayor {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&sticky_comma DOT>;
-        };
+            bindings = <&paren_or_greather_than>;
+        }
 
         copy {
             timeout-ms = <50>;
@@ -83,27 +73,18 @@
             bindings = <&kp LGUI &kp V>;
         };
 
-        corcheteopen {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp LBKT>;
-        };
-        llaveopen {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&sticky_comma LBKT>;
-        };
 
-        corcheteclose {
+        lbkt_or_lbrc {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&lbkt_or_lbrc>;
+        }
+
+        rbkt_or_rbrc {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&kp RBKT>;
-        };
-        llaveclose {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&sticky_comma RBKT>;
-        }; 
+            bindings = <&rbkt_or_rbrc>;
+        }
 
         admiracion {
             timeout-ms = <50>;
@@ -180,12 +161,12 @@
         virgulilla {
             timeout-ms = <50>;
             key-positions = <14 24>;
-            bindings = <&sticky_comma GRAVE>;
+            bindings = <&kp GRAVE>;
         }; 
         underline {
             timeout-ms = <50>;
             key-positions = <15 25>;
-            bindings = <&sticky_comma MINUS>;
+            bindings = <&kp MINUS>;
         }; 
         minus {
             timeout-ms = <50>;
@@ -200,7 +181,7 @@
         pipe {
             timeout-ms = <50>;
             key-positions = <17 27>;
-            bindings = <&sticky_comma BSLH>;
+            bindings = <&kp BSLH>;
         }; 
         
 
@@ -271,6 +252,34 @@
             #binding-cells = <1>;
             release-after-ms = <500>;
         };
+
+        paren_or_less_than: paren_or_less_than {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAREN_OR_LESS_THAN";
+            bindings = <&kp LPAR>, <&kp LT>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        paren_or_greather_than: paren_or_greather_than {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAREN_OR_LESS_THAN";
+            bindings = <&kp RPAR>, <&kp GT>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        lbkt_or_lbrc: lbkt_or_lbrc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "lbkt_or_lbrc";
+            bindings = <&kp LBKT>, <&kp LBRC>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        }
+
+        rbkt_or_rbrc: rbkt_or_rbrc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "rbkt_or_rbrc";
+            bindings = <&kp RBKT>, <&kp RBRC>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        }
     };
 
     conditional_layers {

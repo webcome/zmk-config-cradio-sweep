@@ -190,7 +190,7 @@
         minus {
             timeout-ms = <50>;
             key-positions = <16 26>;
-            bindings = <&kp KC_MINUS>;
+            bindings = <&kp MINUS>;
         }; 
         slash {
             timeout-ms = <50>;

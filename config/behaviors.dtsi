@@ -1,0 +1,10 @@
+/ {
+    behaviors {
+        sticky_comma: sticky_comma {
+            compatible = "zmk,behavior-sticky-key";
+            label = "Sticky COMMA";
+            bindings = <&kp KC_COM>;
+            release-after-ms = <500>;
+        };
+    };
+};

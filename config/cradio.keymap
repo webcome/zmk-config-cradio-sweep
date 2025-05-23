@@ -53,13 +53,13 @@
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&paren_or_less_than>;
-        }
+        };
 
         parencloseorgreater {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&paren_or_greather_than>;
-        }
+        };
 
         copy {
             timeout-ms = <50>;
@@ -78,13 +78,13 @@
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&lbkt_or_lbrc>;
-        }
+        };
 
         rbkt_or_rbrc {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&rbkt_or_rbrc>;
-        }
+        };
 
         admiracion {
             timeout-ms = <50>;

@@ -49,7 +49,7 @@
             bindings = <&kp TAB>;
         };
 
-        parenthesis_open {
+        parenthesisopen {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp KC_LPAR>;
@@ -60,7 +60,7 @@
         #    bindings = <&sticky_comma KC_COM>;
         #};
 
-        parenthesis_close {
+        parenthesisclose {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp KC_RPAR>;
@@ -83,23 +83,23 @@
             bindings = <&lgui &kp V>;
         };
 
-        corchete_open {
+        corcheteopen {
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp KC_LBRACKET>;
         };
-        #llave_open {
+        #llaveopen {
         #    timeout-ms = <50>;
         #    key-positions = <26 27>;
         #    bindings = <&sticky_comma KC_LBRACKET>;
         #};
 
-        corchete_close {
+        corcheteclose {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp KC_RBRACKET>;
         };
-        #llave_close {
+        #llaveclose {
         #    timeout-ms = <50>;
         #    key-positions = <27 28>;
         #    bindings = <&sticky_comma KC_RBRACKET>;

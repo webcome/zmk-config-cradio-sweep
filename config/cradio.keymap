@@ -25,7 +25,7 @@
             bindings = <&kp ESC>;
         };
 
-        esc {
+        esc_2 {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
@@ -44,97 +44,117 @@
         };
 
         tab {
+            timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp TAB>;
         };
 
         parenthesis_open {
+            timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp KC_LPAR>;
         };
         menor {
+            timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&sk &kp KC_COM>;
         };
 
         parenthesis_close {
+            timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp KC_RPAR>;
         };
         mayor {
+            timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&sk &kp KC_DOT>;
         };
 
         copy {
+            timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&lgui &kp C>;
         };
 
         paste {
+            timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&lgui &kp V>;
         };
 
         corchete_open {
+            timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp KC_LBRACKET>;
         };
         llave_open {
+            timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&sk &kp KC_LBRACKET>;
         };
 
         corchete_close {
+            timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp KC_RBRACKET>;
         };
         llave_close {
+            timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&sk &kp KC_RBRACKET>;
         }; 
 
         admiracion {
+            timeout-ms = <50>;
             key-positions = <0 10>;
             bindings = <&kp EXCL>;
         }; 
 
         arroba {
+            timeout-ms = <50>;
             key-positions = <1 11>;
             bindings = <&kp AT>;
         }; 
 
         michi {
+            timeout-ms = <50>;
             key-positions = <2 12>;
             bindings = <&kp HASH>;
         }; 
 
         dollar {
+            timeout-ms = <50>;
             key-positions = <3 13>;
             bindings = <&kp DLLR>;
         }; 
 
         percent {
+            timeout-ms = <50>;
             key-positions = <4 14>;
             bindings = <&kp PRCNT>;
         }; 
 
         circun {
+            timeout-ms = <50>;
             key-positions = <5 15>;
             bindings = <&kp CARET>;
         }; 
 
         plus {
+            timeout-ms = <50>;
             key-positions = <6 16>;
             bindings = <&kp PLUS>;
         }; 
 
         asterisk {
+            timeout-ms = <50>;
             key-positions = <7 17>;
             bindings = <&kp STAR>;
         }; 
 
         ampersand {
+            timeout-ms = <50>;
             key-positions = <8 18>;
             bindings = <&kp AMPS>;
         }; 
@@ -186,26 +206,31 @@
 
 
         caps_word {
+            timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&caps_word>;
         };
 
         delete {
+            timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp DELETE>;
         };
 
         backspace {
+            timeout-ms = <50>;
             bindings = <&kp BACKSPACE>;
             key-positions = <17 18>;
         };
 
         leader_leader_s {
+            timeout-ms = <50>;
             bindings = <&leader_leader_s>;
             key-positions = <13 16>;
         };
 
         cmd_shift {
+            timeout-ms = <50>;
             bindings = <&kp LS(LCMD)>;
             key-positions = <10 30>;
         };

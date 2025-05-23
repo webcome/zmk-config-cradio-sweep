@@ -74,13 +74,13 @@
         copy {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            bindings = <&lgui &kp C>;
+            bindings = <&kp LGUI &kp C>;
         };
 
         paste {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            bindings = <&lgui &kp V>;
+            bindings = <&kp LGUI &kp V>;
         };
 
         corcheteopen {

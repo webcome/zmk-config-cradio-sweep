@@ -180,12 +180,12 @@
         virgulilla {
             timeout-ms = <50>;
             key-positions = <14 24>;
-            bindings = <&sk &kp KC_GRAVE>;
+            bindings = <&sticky_comma KC_GRAVE>;
         }; 
         underline {
             timeout-ms = <50>;
             key-positions = <15 25>;
-            bindings = <&sk &kp KC_MINUS>;
+            bindings = <&sticky_comma KC_MINUS>;
         }; 
         minus {
             timeout-ms = <50>;
@@ -200,7 +200,7 @@
         pipe {
             timeout-ms = <50>;
             key-positions = <17 27>;
-            bindings = <&sk &kp KC_BSLS>;
+            bindings = <&sticky_comma KC_BSLS>;
         }; 
 
 

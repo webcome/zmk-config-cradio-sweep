@@ -235,7 +235,7 @@
         less_greater_full: less_greater_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR>;
+            bindings = <&kp LT &kp GT>;
             label = "LESS_GREATER_FULL";
         };
 

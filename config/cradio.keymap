@@ -186,6 +186,17 @@
         }; 
         
 
+        parentesis_angles_combo {
+            timeout-ms = <50>;
+            key-positions = <16 17 18>;
+            bindings = <&paren_or_less_than_full>;
+        };
+
+        bracket_llaves_combo {
+            timeout-ms = <50>;
+            key-positions = <16 17 18>;
+            bindings = <&lbkt_or_lbrc_full>;
+        };
 
 
         caps_word {
@@ -276,6 +287,23 @@
             compatible = "zmk,behavior-mod-morph";
             label = "rbkt_or_rbrc";
             bindings = <&kp RBKT>, <&kp RBRC>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+        
+        
+        paren_or_less_than_full: paren_or_less_than_full {
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAREN_OR_LESS_THAN_FULL";
+            bindings = <&kp LPAR &kp RPAR>, <&kp LT &kp RT>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+        
+        lbkt_or_lbrc_full: lbkt_or_lbrc_full {
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "lbkt_or_lbrc_full";
+            bindings = <&kp LBKT &kp RBKT>, <&kp LBRC &kp RBRC>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
     };

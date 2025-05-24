@@ -330,7 +330,7 @@
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
             label = "lbkt_or_lbrc_full";
-            bindings = <&corchetes_full, <&llaves_full>;
+            bindings = <&corchetes_full>, <&llaves_full>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
     };

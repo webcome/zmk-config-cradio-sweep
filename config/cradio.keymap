@@ -219,10 +219,38 @@
 
     macros {
         leader_leader_s: leader_leader {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&kp ESCAPE &kp SPACE &kp SPACE &kp S>;
-        label = "LEADER_LEADER";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp SPACE &kp SPACE &kp S>;
+            label = "LEADER_LEADER";
+        };
+
+        parentesis_full: parentesis_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR>;
+            label = "PARENTESIS_FULL";
+        };
+
+        less_greater_full: less_greater_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR>;
+            label = "LESS_GREATER_FULL";
+        };
+
+        llaves_full: llaves_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC>;
+            label = "LLAVES_FULL";
+        };
+
+        corchetes_full: corchetes_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT>;
+            label = "CORCHETES_FULL";
         };
     };
 
@@ -294,7 +322,7 @@
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
             label = "PAREN_OR_LESS_THAN_FULL";
-            bindings = <&kp LPAR &kp RPAR>, <&kp LT &kp RT>;
+            bindings = <&parentesis_full>, <&less_greater_full>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
         
@@ -302,7 +330,7 @@
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
             label = "lbkt_or_lbrc_full";
-            bindings = <&kp LBKT &kp RBKT>, <&kp LBRC &kp RBRC>;
+            bindings = <&corchetes_full, <&llaves_full>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
     };

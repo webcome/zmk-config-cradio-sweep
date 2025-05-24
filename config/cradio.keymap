@@ -31,16 +31,17 @@
             bindings = <&kp ESC>;
         };
 
-        backspace {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&kp BACKSPACE>;
-        };
 
         delete {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <6 7>;
             bindings = <&kp DELETE>;
+        };
+
+        backspace {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp BACKSPACE>;
         };
 
         tab {
@@ -257,7 +258,7 @@
         paren_or_greather_than: paren_or_greather_than {
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "PAREN_OR_LESS_THAN";
+            label = "PAREN_OR_GREATHER_THAN";
             bindings = <&kp RPAR>, <&kp GT>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };

@@ -34,7 +34,7 @@
         backspace_or_delete {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&>;
+            bindings = <&backspace_or_delete>;
         };
 
         tab {

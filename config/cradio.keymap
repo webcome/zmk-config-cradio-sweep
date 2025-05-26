@@ -344,6 +344,14 @@
             bindings = <&corchetes_full>, <&llaves_full>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
+
+        backspace_or_delete: backspace_or_delete {
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_OR_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
     };
 
     conditional_layers {

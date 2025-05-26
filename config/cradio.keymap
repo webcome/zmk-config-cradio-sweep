@@ -31,17 +31,10 @@
             bindings = <&kp ESC>;
         };
 
-
-        delete {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&kp DELETE>;
-        };
-
-        backspace {
+        backspace_or_delete {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp BACKSPACE>;
+            bindings = <&>;
         };
 
         tab {

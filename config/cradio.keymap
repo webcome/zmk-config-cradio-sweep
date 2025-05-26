@@ -339,11 +339,11 @@
         };
 
         backspace_or_delete: backspace_or_delete {
-            #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_OR_DELETE";
+            #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 

@@ -345,6 +345,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+
+        comma_layer_td: comma_layer_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMMA_LAYER_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>; // Tiempo en ms para detectar el doble toque. Ajusta si es necesario.
+            bindings = <&kp COMMA>, <&tog 1>; // <un toque>, <dos toques>
+        };
     };
 
     conditional_layers {
@@ -367,7 +375,7 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,     K,         L,        SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &ht2 3 X   &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT  &ht2hold 3 FSLH
+            &kp Z      &ht2 3 X   &kp C      &kp V      &kp B          &kp N      &kp M      &comma_layer_td  &ht2 5 DOT  &ht2hold 3 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &ht2hold 6 TAB   &sl 1   &ht2hold 2 ENTER  &kp SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯

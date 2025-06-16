@@ -394,7 +394,6 @@
             >;
         };
 
-/., 
         raise {
         bindings = <
             &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR   &kp RPAR

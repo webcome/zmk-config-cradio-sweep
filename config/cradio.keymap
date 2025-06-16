@@ -157,7 +157,7 @@
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&tog 3>;
-        }
+        };
 
 
         grave {

@@ -389,7 +389,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &ht2 3 X   &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT  &ht2hold 3 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &ht2hold 6 TAB   &sl 1   &ht2hold 2 ENTER  &kp SPACE 
+                                            &ht2hold 6 TAB   &sl 1   &ht2hold 2 ENTER  &ht2hold 6 SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -432,10 +432,10 @@
 
         fn {
         bindings = <
-            &kp F13  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_MUTE            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP        &kp C_POWER
-            &kp F14  &kp F4  &kp F5  &kp F6  &kp F11    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       &trans                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans
-            &kp F15  &kp F1  &kp F2  &kp F3  &kp F12    &trans                                  &trans                &trans                &trans  &trans
-                                     &trans  &trans     &trans                                  &trans
+            &trans   &trans  &trans  &trans  &trans    &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_MUTE            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP        &kp C_POWER
+            &trans   &trans  &trans  &trans  &trans    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       &trans                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans
+            &trans   &trans  &trans  &trans  &trans    &trans                                  &trans                &trans                &trans  &trans
+                                     &trans  &trans    &trans                                  &trans
         >;
         };
 
@@ -450,10 +450,10 @@
         
         special {
         bindings = <
-            &trans   &trans    &trans  &trans  &trans   &trans  &trans            &trans             &trans    &trans
-            &trans   &trans    &trans  &trans  &trans   &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))   &trans    &trans
-            &trans   &trans    &trans  &trans  &trans   &trans  &trans            &trans             &trans    &trans
-                                       &trans  &trans   &trans  &trans
+            &kp F1   &kp F2   &kb F3   &kb F4   &kb F5   &kb F6  &kb F7            &kb F8            &kb F9  &kb F10
+            &kp F11  &kp F12  &kb F13  &kb F14  &kb F15  &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))  &trans  &trans
+            &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
+                                       &trans   &trans   &trans  &trans
         >;
         };
         

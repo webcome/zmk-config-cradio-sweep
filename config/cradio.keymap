@@ -150,7 +150,7 @@
         toggle_layer_mouse {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&tog 7>;
+            bindings = <&tog 8>;
         }; 
 
         toggle_layer_num {
@@ -363,7 +363,7 @@
             label = "P_LAYER_TD";
             #binding-cells = <0>;
             tapping-term-ms = <200>; // Tiempo en ms para detectar el doble toque. Ajusta si es necesario.
-            bindings = <&kp P>, <&tog 7>; // <un toque>, <dos toques>
+            bindings = <&kp P>, <&tog 8>; // <un toque>, <dos toques>
         };
     };
 
@@ -389,7 +389,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &ht2 3 X   &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT  &ht2hold 3 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &ht2hold 6 TAB   &sl 1   &ht2hold 2 ENTER  &ht2hold 6 SPACE 
+                                            &ht2hold 6 TAB   &sl 1   &ht2hold 2 ENTER  &ht2hold 7 SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -448,10 +448,19 @@
         //>;
         //};
         
-        special {
+        fn_left {
         bindings = <
-            &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6  &kp F7            &kp F8            &kp F9  &kp F10
-            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))  &trans  &trans
+            &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans            &trans            &trans  &trans 
+            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans            &trans            &trans  &trans
+            &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
+                                       &trans   &trans   &trans  &trans
+        >;
+        };
+        
+        fn_right {
+        bindings = <
+            &trans   &trans   &trans   &trans   &trans   &kp F6  &kp F7            &kp F8            &kp F9  &kp F10
+            &trans   &trans   &trans   &trans   &trans   &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))  &trans  &trans
             &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
                                        &trans   &trans   &trans  &trans
         >;

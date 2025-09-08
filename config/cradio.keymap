@@ -387,7 +387,7 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,     K,         L,        SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &ht2hold 3 Z      &kp X   &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT  &ht2hold 3 FSLH
+            &ht2hold 6 Z      &kp X   &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &ht2 5 DOT  &ht2hold 7 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp TAB   &sl 1   &ht2hold 2 ENTER  &kp SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -414,13 +414,13 @@
 
         num {
         bindings = <
-            &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6  &kp F7            &kp F8            &kp F9  &kp F10 
-            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))  &trans  &trans
+            &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
+            &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
             &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
                                              &trans     &trans    &trans     &trans
         >;
         };
-
+        
         both {
         bindings = <
             &trans      &trans        &trans      &trans        &trans        &trans        &trans        &trans        &trans       &trans
@@ -450,8 +450,8 @@
         
         fn_left {
         bindings = <
-            &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans            &trans            &trans  &trans 
-            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans            &trans            &trans  &trans
+            &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6  &kp F7            &kp F8            &kp F9  &kp F10 
+            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))  &trans  &trans
             &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
                                        &trans   &trans   &trans  &trans
         >;
@@ -459,8 +459,8 @@
         
         fn_right {
         bindings = <
-            &trans   &trans   &trans   &trans   &trans   &kp F6  &kp F7            &kp F8            &kp F9  &kp F10
-            &trans   &trans   &trans   &trans   &trans   &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))  &trans  &trans
+            &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6  &kp F7            &kp F8            &kp F9  &kp F10 
+            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &kp LG(LS(RBKT))  &kp LG(LS(LBKT))  &trans  &trans
             &trans   &trans   &trans   &trans   &trans   &trans  &trans            &trans            &trans  &trans
                                        &trans   &trans   &trans  &trans
         >;
